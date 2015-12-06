@@ -1,25 +1,159 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5C6-OY-dl5">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Frutas-->
+        <scene sceneID="uNm-qq-gSp">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <collectionViewController storyboardIdentifier="viewProducts" title="Frutas" id="Rp4-MZ-r0c" customClass="ViewController" customModule="ErrorCollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="MGW-kD-8Tj">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewLayout key="collectionViewLayout" id="iAm-1A-zAA" customClass="CardsLayout" customModule="ErrorCollectionView" customModuleProvider="target"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FruitsCollectionViewCell" id="3Rz-DW-sh6" userLabel="LinesCard" customClass="FruitsCollectionViewCell" customModule="ErrorCollectionView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="180" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="180" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="uAq-us-uaT">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="150"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ueg-6s-6p2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="120"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="120" id="2G4-vC-2yy"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Caption" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJ8-sy-Zr6">
+                                                    <rect key="frame" x="4" y="128" width="172" height="17"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="VVw-DI-Oie"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.94236778850000003" green="0.94236778850000003" blue="0.94236778850000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Ueg-6s-6p2" secondAttribute="trailing" id="9tn-Ec-Dij"/>
+                                                <constraint firstItem="Ueg-6s-6p2" firstAttribute="leading" secondItem="uAq-us-uaT" secondAttribute="leading" id="9y3-av-jGp"/>
+                                                <constraint firstItem="Ueg-6s-6p2" firstAttribute="top" secondItem="uAq-us-uaT" secondAttribute="top" id="BVQ-uu-zFy"/>
+                                                <constraint firstAttribute="trailing" secondItem="kJ8-sy-Zr6" secondAttribute="trailing" constant="4" id="cgD-hO-J8v"/>
+                                                <constraint firstItem="kJ8-sy-Zr6" firstAttribute="leading" secondItem="uAq-us-uaT" secondAttribute="leading" constant="4" id="yOw-9E-5tL"/>
+                                                <constraint firstItem="kJ8-sy-Zr6" firstAttribute="top" secondItem="Ueg-6s-6p2" secondAttribute="bottom" constant="4" id="zIB-mp-e9D"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="border">
+                                                    <real key="value" value="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                    <size key="value" width="0.0" height="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                    <real key="value" value="0.69999999999999996"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="uAq-us-uaT" secondAttribute="bottom" id="1oL-cS-gAF"/>
+                                    <constraint firstAttribute="trailing" secondItem="uAq-us-uaT" secondAttribute="trailing" id="6mM-cj-cE3"/>
+                                    <constraint firstItem="uAq-us-uaT" firstAttribute="leading" secondItem="3Rz-DW-sh6" secondAttribute="leading" id="D1V-mn-GET"/>
+                                    <constraint firstItem="uAq-us-uaT" firstAttribute="top" secondItem="3Rz-DW-sh6" secondAttribute="top" id="r7o-mp-xnY"/>
+                                </constraints>
+                                <size key="customSize" width="180" height="150"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="captionLabel" destination="kJ8-sy-Zr6" id="hrY-K0-2r1"/>
+                                    <outlet property="imageView" destination="Ueg-6s-6p2" id="T1K-ka-eme"/>
+                                    <outlet property="imageViewHeightLayoutConstraint" destination="2G4-vC-2yy" id="sxk-YF-CZX"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Rp4-MZ-r0c" id="OKC-DR-udp"/>
+                            <outlet property="delegate" destination="Rp4-MZ-r0c" id="cEf-NZ-xKD"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Frutas" id="AhF-2r-zMc">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="v8X-yP-LXQ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jlb-xi-g0Y">
+                                <rect key="frame" x="520" y="7" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Só maçã"/>
+                                <connections>
+                                    <action selector="showOnlyApple:" destination="Rp4-MZ-r0c" eventType="touchUpInside" id="EX3-8E-VKi"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="uiCollectionView" destination="MGW-kD-8Tj" id="qDC-xw-Q5w"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QXF-w1-KfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2042" y="-263"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vhf-Pk-uu3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5C6-OY-dl5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A0a-WQ-haX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Rp4-MZ-r0c" kind="relationship" relationship="rootViewController" id="Ekn-Sc-zZd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nRj-4p-Pyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1230" y="-263"/>
         </scene>
     </scenes>
 </document>
