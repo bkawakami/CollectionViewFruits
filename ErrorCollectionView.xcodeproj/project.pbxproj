@@ -19,7 +19,6 @@
 		76A6F1941C148949004A1A8E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A6F1921C148949004A1A8E /* Alamofire.framework */; };
 		76A6F1951C148949004A1A8E /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A6F1931C148949004A1A8E /* AlamofireImage.framework */; };
 		76A6F1971C148A2F004A1A8E /* FruitsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6F1961C148A2F004A1A8E /* FruitsCollectionViewCell.swift */; };
-		76A6F1991C1493A9004A1A8E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 76A6F1981C1493A9004A1A8E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +36,6 @@
 		76A6F1921C148949004A1A8E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		76A6F1931C148949004A1A8E /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "Pods/../build/Debug-iphoneos/AlamofireImage.framework"; sourceTree = "<group>"; };
 		76A6F1961C148A2F004A1A8E /* FruitsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsCollectionViewCell.swift; sourceTree = "<group>"; };
-		76A6F1981C1493A9004A1A8E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9F551BA021804BF8BD59BC59 /* Pods_ErrorCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ErrorCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC4ACDE4830B700E48415AF /* Pods-ErrorCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErrorCollectionView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ErrorCollectionView/Pods-ErrorCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,7 +85,6 @@
 				76A6F18E1C1487BE004A1A8E /* CardsView.swift */,
 				76A6F1901C1487F9004A1A8E /* FruitsObject.swift */,
 				76A6F1961C148A2F004A1A8E /* FruitsCollectionViewCell.swift */,
-				76A6F1981C1493A9004A1A8E /* README.md */,
 			);
 			path = ErrorCollectionView;
 			sourceTree = "<group>";
@@ -236,7 +233,6 @@
 				76A6F1911C1487F9004A1A8E /* FruitsObject.swift in Sources */,
 				76A6F1971C148A2F004A1A8E /* FruitsCollectionViewCell.swift in Sources */,
 				76A6F17D1C14797E004A1A8E /* ViewController.swift in Sources */,
-				76A6F1991C1493A9004A1A8E /* README.md in Sources */,
 				76A6F18D1C148767004A1A8E /* CardsLayoutDelegate.swift in Sources */,
 				76A6F18F1C1487BE004A1A8E /* CardsView.swift in Sources */,
 				76A6F17B1C14797E004A1A8E /* AppDelegate.swift in Sources */,
