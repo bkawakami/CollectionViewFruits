@@ -1,4 +1,6 @@
-s repository is designed to display an error when the CollecionView tries to be updated dynamically.
+# CollectionView Fruits
+
+This repository is designed to display an error when the CollecionView tries to be updated dynamically.
 
 # Cards CollectionView
 
